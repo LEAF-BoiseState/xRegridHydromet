@@ -1,0 +1,10 @@
+---
+ jobname: "Debug regrid Livneh to LEAF-WRF-ID1"
+ src_dir:
+ src_gridinfo:
+ dest_dir:
+ dest_gridinfo:
+ start_date:
+ end_date:
+ src_resample:
+
