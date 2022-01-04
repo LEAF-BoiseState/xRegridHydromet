@@ -1,10 +1,19 @@
 ---
- jobname: "Debug regrid Livneh to LEAF-WRF-ID1"
- src_dir:
- src_gridinfo:
- dest_dir:
- dest_gridinfo:
- start_date:
- end_date:
- src_resample:
+ jobinfo:
+   jobname: 'Debug regrid Livneh to LEAF-WRF-ID1'
+   jobtag: 'livneh_to_id-wrf30-narr'
+   build_weights: True
+   xesmf_method: 'conservative'
+   regrid_data: False
+   start_date: '2010-05' # Not necessary when regrid_data == False
+   end_date: '2010-10' # Not necessary when regrid_data == False
+ srcinfo:
+   src_dir: './debug_src/'
+   src_gridinfo: './debug_grid_metadata/livneh_parms.yml'
+   curvilinear: False
+ destinfo:
+   dest_dir: './debug_dest_grid_data/'
+   dest_gridinfo: './dest_grid_metadata/id-wrf30-narr.yml'
+   curvilinear: True
+
 

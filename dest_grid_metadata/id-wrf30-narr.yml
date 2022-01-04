@@ -1,0 +1,11 @@
+---
+ curvilinear: True
+ latvar_name: 'XLAT_M'
+ lonvar_name: 'XLONG_M'
+ latvar_b_name: 'XLAT_C'
+ lonvar_b_name: 'XLONG_C'
+ latvar_dropdim: 'Time' # Dimensions to drop when fetching grid
+ lonvar_dropdim: 'Time'
+ latvar_b_dropdim: 'Time'
+ lonvar_b_dropdim: 'Time'
+ template_file: './dest/id_wrf_narr_d01.nc'

@@ -1,0 +1,7 @@
+---
+ curvilinear: False
+ latvar_name: 'lat'
+ lonvar_name: 'lon'
+ latvar_b_name: null
+ lonvar_b_name: null
+ template_file: './debug_grid_data/livneh_NAmerExt_15Oct2014.198610.nc'
