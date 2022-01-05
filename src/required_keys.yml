@@ -1,0 +1,16 @@
+---
+ - 'jobinfo':
+     - 'jobname'
+     - 'jobtag'
+     - 'build_weights'
+     - 'xesmf_method'
+     - 'regrid_data'
+ - 'srcinfo':
+     - 'src_dir'
+     - 'src_gridinfo'
+     - 'curvilinear'
+ - 'destinfo':
+     - 'dest_dir'
+     - 'dest_gridinfo'
+     - 'curvilinear'
+

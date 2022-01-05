@@ -5,6 +5,7 @@
    build_weights: True
    xesmf_method: 'conservative'
    regrid_data: False
+   regridder_fname: null
    start_date: '2010-05' # Not necessary when regrid_data == False
    end_date: '2010-10' # Not necessary when regrid_data == False
  srcinfo:
