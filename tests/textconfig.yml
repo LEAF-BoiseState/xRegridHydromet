@@ -1,0 +1,19 @@
+---
+ jobinfo:
+   jobname: 'Test regridding'
+   jobtag: 'test'
+   build_weights: True
+   xesmf_method: 'conservative'
+   regrid_data: True
+   regridder_fname: null
+   start_date: '2010-05' 
+   end_date: '2010-10' 
+ srcinfo:
+   src_dir: './tests/testsrc/'
+   src_gridinfo: './tests/test_gridinfo/testsrc.yml'
+   curvilinear: False
+ destinfo:
+   dest_dir: './tests/testdest/'
+   dest_gridinfo: './test/test_gridinfo/testdest.yml'
+   curvilinear: True
+
