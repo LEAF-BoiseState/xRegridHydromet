@@ -1,10 +1,10 @@
 ---
  jobinfo:
    jobname: 'Test regridding'
-   jobtag: 'test'
+   jobtag: './tests/test-xregrid-hydromet'
    build_weights: True
    xesmf_method: 'conservative'
-   regrid_data: True
+   regrid_data: False
    regridder_fname: null
    start_date: '2010-05' 
    end_date: '2010-10' 
@@ -14,6 +14,6 @@
    curvilinear: False
  destinfo:
    dest_dir: './tests/testdest/'
-   dest_gridinfo: './test/test_gridinfo/testdest.yml'
+   dest_gridinfo: './tests/test_gridinfo/testdest.yml'
    curvilinear: True
 

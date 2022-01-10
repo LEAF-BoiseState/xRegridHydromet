@@ -1,0 +1,9 @@
+---
+ curvilinear: False
+ latvar_name: 'lat'
+ lonvar_name: 'lon'
+ latvar_b_name: null
+ lonvar_b_name: null
+ template_file: './tests/testsrc/testsrcgrid.nc'
+ 
+ 
