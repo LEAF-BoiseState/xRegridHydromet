@@ -1,0 +1,18 @@
+---
+ jobinfo:
+   jobname: 'Test regridding'
+   jobtag: './tests/test-xregrid-hydromet'
+   build_weights: True
+   xesmf_method: 'conservative'
+   regrid_data: True
+   regridder_fname: null
+ srcinfo:
+   src_dir: './tests/testsrc/'
+   src_gridinfo: './tests/test_gridinfo/testsrc.yml'
+   curvilinear: False
+   srcfile_pattern: 'test'
+ destinfo:
+   dest_dir: './tests/testdest/'
+   dest_gridinfo: './tests/test_gridinfo/testdest.yml'
+   curvilinear: True
+   destfile_pattern: 'test_regridded_'
