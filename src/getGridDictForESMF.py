@@ -87,12 +87,13 @@ def getGridDictForESMF(gridinfo_dict):
             lon_b = np.append((lon[0]-0.5*(lon[1]-lon[0])),(lon+0.5*(lon[1]-lon[0])))
         
         else:
+
             lat_b = np.concatenate(((np.expand_dims(lat[0,:]-0.5*(lat[1,:]-lat[0,:]),axis=0)),
                                     np.array(lat+0.5*(lat[1,:]-lat[0,:]))),axis=0)
             lat_b = np.concatenate((lat_b,np.expand_dims(lat_b[:,-1],axis=1)),axis=1)
             
-            lon_b = np.concatenate((np.expand_dims(lon[:,0]-0.5*(lon[:,1]-lon[:,0]),axis=1),
-                                    (lon+0.5*(lon[:,1]-lon[:,0]))),axis=1)
+            lon_b = np.concatenate(((np.expand_dims(lon[:,0]-0.5*(lon[:,1]-lon[:,0]),axis=1)),
+                                    np.array(lon+0.5*(lon[1,:]-lon[0,:]))),axis=1)
             lon_b = np.concatenate((lon_b,np.expand_dims(lon_b[-1,:],axis=0)),axis=0)
             
     # If lat, lat_b, lon, and lon_b are 1-D arrays, use meshgrid to make 2-D arrays

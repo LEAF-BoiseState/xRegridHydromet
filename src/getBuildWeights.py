@@ -24,6 +24,8 @@ def getBuildWeights(config_dict):
     # Call xESMF regridder
     regrid_method = config_dict['jobinfo']['xesmf_method']
 
+    # Call regridder
+    print('Calling regrider...', flush=True)
     regridder = xe.Regridder(src_grid, dest_grid, regrid_method)
 
     return regridder

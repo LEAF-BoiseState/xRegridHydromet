@@ -1,0 +1,8 @@
+---
+ curvilinear: False
+ latvar_name: 'latitude'
+ lonvar_name: 'longitude'
+ latvar_b_name: null
+ lonvar_b_name: null
+ template_file: './debug_grid_data/conus_ens_001.nc4'
+ 

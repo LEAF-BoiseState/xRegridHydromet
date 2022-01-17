@@ -1,19 +1,19 @@
 ---
  jobinfo:
-   jobname: 'Debug regrid Livneh to LEAF-WRF-ID1'
-   jobtag: 'livneh_to_id-wrf30-narr'
+   jobname: 'Regrid Newman Ensemble to LEAF-WRF-ID1'
+   jobtag: 'newman_to_id-wrf30-narr'
    build_weights: True
    xesmf_method: 'conservative'
    regrid_data: True
    regridder_fname: null
  srcinfo:
    src_dir: './debug_grid_data/'
-   src_gridinfo: './debug_grid_metadata/livneh_parms.yml'
+   src_gridinfo: './debug_grid_metadata/newman_ens.yml'
    curvilinear: False
-   srcfile_pattern: 'livneh_NAmerExt'
+   srcfile_pattern: 'conus_ens'
  destinfo:
    dest_dir: './dest/'
    dest_gridinfo: './dest_grid_metadata/id-wrf30-narr.yml'
    curvilinear: True
-   destfile_pattern: 'id_wrf_d01_livneh_NAmerExt'
+   destfile_pattern: 'id_wrf_d01_conus_ens'
 
