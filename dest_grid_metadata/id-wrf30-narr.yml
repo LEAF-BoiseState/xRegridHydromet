@@ -10,4 +10,4 @@
  lonvar_b_dropdim: 'Time'
  xdimname: 'west_east' # Optional, will rename x-dimension in output dataset
  ydimname: 'south_north' # Optional, will rename y-dimension in output dataset
- template_file: './dest/id_wrf_narr_d01.nc'
+ template_file: '~/xRegridHydromet/dest/id_wrf_narr_d01.nc'
