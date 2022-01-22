@@ -31,7 +31,8 @@ def RegridData(config_data,regridder=None):
 
     src_file_pattern = config_data['srcinfo']['srcfile_pattern'] # Get the search string pattern
     src_files = glob.glob(src_dir+src_file_pattern+'*') # Get a list of source grid files to regrid
-
+    src_files = sorted(src_files)
+    
     # Get the metadata for the source and destination grids
     src_gridinfo = getGridMetaData.getGridMetaData(config_data['srcinfo']['src_gridinfo'])
 
